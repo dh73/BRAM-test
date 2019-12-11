@@ -1,0 +1,69 @@
+#read_verilog /home/diego/bram_tests/rams_sp_rf.v
+read_verilog /home/diego/bram_tests/rams_sdp_rf.v
+chparam -set A 2 -set D 6  rams_sp_rf
+synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 29 -set D 62 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 28 -set D 64 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 27 -set D 68 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 26 -set D 616 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 25 -set D 632 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 24 -set D 664 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 23 -set D 6128 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 22 -set D 6256 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1
+
+#design -reset
+#read_verilog rams_sp_rf.v
+#chparam -set A 21 -set D 6512 rams_sp_rf
+#synth_xilinx -abc9 -flatten
+#cd  rams_sp_rf # Constrain all select calls below inside the top module
+#select -assert-count 1 t:RAMB18E1

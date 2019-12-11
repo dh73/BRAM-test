@@ -1,0 +1,1320 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2019  Clifford Wolf <clifford@clifford.at>           |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+932 (git sha1 7dece79, clang 3.8.0-2ubuntu4 -fPIC -Os)
+
+
+-- Executing script file `run.ys' --
+
+1. Executing Verilog-2005 frontend: /home/diego/bram_tests/rams_sp_rf.v
+Parsing Verilog input from `/home/diego/bram_tests/rams_sp_rf.v' to AST representation.
+Generating RTLIL representation for module `\rams_sp_rf'.
+Successfully finished Verilog frontend.
+Parameter \D = 6
+Parameter \A = 2
+
+2. Executing AST frontend in derive mode using pre-parsed AST for module `\rams_sp_rf'.
+Parameter \D = 6
+Parameter \A = 2
+Generating RTLIL representation for module `$paramod\rams_sp_rf\D=6\A=2'.
+
+3. Executing SYNTH_XILINX pass.
+
+3.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/cells_sim.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\IBUF'.
+Generating RTLIL representation for module `\IBUFG'.
+Generating RTLIL representation for module `\OBUF'.
+Generating RTLIL representation for module `\IOBUF'.
+Generating RTLIL representation for module `\OBUFT'.
+Generating RTLIL representation for module `\BUFG'.
+Generating RTLIL representation for module `\BUFGCTRL'.
+Generating RTLIL representation for module `\BUFHCE'.
+Generating RTLIL representation for module `\INV'.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\LUT5'.
+Generating RTLIL representation for module `\LUT6'.
+Generating RTLIL representation for module `\LUT6_2'.
+Generating RTLIL representation for module `\MUXCY'.
+Generating RTLIL representation for module `\MUXF7'.
+Generating RTLIL representation for module `\MUXF8'.
+Generating RTLIL representation for module `\XORCY'.
+Generating RTLIL representation for module `\CARRY4'.
+Generating RTLIL representation for module `\FDRE'.
+Generating RTLIL representation for module `\FDSE'.
+Generating RTLIL representation for module `\FDCE'.
+Generating RTLIL representation for module `\FDPE'.
+Generating RTLIL representation for module `\FDRE_1'.
+Generating RTLIL representation for module `\FDSE_1'.
+Generating RTLIL representation for module `\FDCE_1'.
+Generating RTLIL representation for module `\FDPE_1'.
+Generating RTLIL representation for module `\LDCE'.
+Generating RTLIL representation for module `\LDPE'.
+Generating RTLIL representation for module `\RAM16X1S'.
+Generating RTLIL representation for module `\RAM16X1S_1'.
+Generating RTLIL representation for module `\RAM32X1S'.
+Generating RTLIL representation for module `\RAM32X1S_1'.
+Generating RTLIL representation for module `\RAM64X1S'.
+Generating RTLIL representation for module `\RAM64X1S_1'.
+Generating RTLIL representation for module `\RAM128X1S'.
+Generating RTLIL representation for module `\RAM128X1S_1'.
+Generating RTLIL representation for module `\RAM256X1S'.
+Generating RTLIL representation for module `\RAM512X1S'.
+Generating RTLIL representation for module `\RAM16X2S'.
+Generating RTLIL representation for module `\RAM32X2S'.
+Generating RTLIL representation for module `\RAM64X2S'.
+Generating RTLIL representation for module `\RAM16X4S'.
+Generating RTLIL representation for module `\RAM32X4S'.
+Generating RTLIL representation for module `\RAM16X8S'.
+Generating RTLIL representation for module `\RAM32X8S'.
+Generating RTLIL representation for module `\RAM16X1D'.
+Generating RTLIL representation for module `\RAM16X1D_1'.
+Generating RTLIL representation for module `\RAM32X1D'.
+Generating RTLIL representation for module `\RAM32X1D_1'.
+Generating RTLIL representation for module `\RAM64X1D'.
+Generating RTLIL representation for module `\RAM64X1D_1'.
+Generating RTLIL representation for module `\RAM128X1D'.
+Generating RTLIL representation for module `\RAM256X1D'.
+Generating RTLIL representation for module `\RAM32M'.
+Generating RTLIL representation for module `\RAM32M16'.
+Generating RTLIL representation for module `\RAM64M'.
+Generating RTLIL representation for module `\RAM64M8'.
+Generating RTLIL representation for module `\ROM16X1'.
+Generating RTLIL representation for module `\ROM32X1'.
+Generating RTLIL representation for module `\ROM64X1'.
+Generating RTLIL representation for module `\ROM128X1'.
+Generating RTLIL representation for module `\ROM256X1'.
+Generating RTLIL representation for module `\SRL16E'.
+Generating RTLIL representation for module `\SRLC16E'.
+Generating RTLIL representation for module `\SRLC32E'.
+Generating RTLIL representation for module `\MULT18X18'.
+Generating RTLIL representation for module `\MULT18X18S'.
+Generating RTLIL representation for module `\MULT18X18SIO'.
+Generating RTLIL representation for module `\DSP48A'.
+Generating RTLIL representation for module `\DSP48A1'.
+Generating RTLIL representation for module `\DSP48E1'.
+Successfully finished Verilog frontend.
+
+3.2. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/cells_xtra.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/cells_xtra.v' to AST representation.
+Generating RTLIL representation for module `\FDCPE'.
+Generating RTLIL representation for module `\FDRSE'.
+Generating RTLIL representation for module `\LDCPE'.
+Generating RTLIL representation for module `\AND2B1L'.
+Generating RTLIL representation for module `\OR2L'.
+Generating RTLIL representation for module `\MUXF5'.
+Generating RTLIL representation for module `\MUXF6'.
+Generating RTLIL representation for module `\MUXF9'.
+Generating RTLIL representation for module `\CARRY8'.
+Generating RTLIL representation for module `\ORCY'.
+Generating RTLIL representation for module `\MULT_AND'.
+Generating RTLIL representation for module `\SRL16'.
+Generating RTLIL representation for module `\SRLC16'.
+Generating RTLIL representation for module `\CFGLUT5'.
+Generating RTLIL representation for module `\RAMB16_S1'.
+Generating RTLIL representation for module `\RAMB16_S2'.
+Generating RTLIL representation for module `\RAMB16_S4'.
+Generating RTLIL representation for module `\RAMB16_S9'.
+Generating RTLIL representation for module `\RAMB16_S18'.
+Generating RTLIL representation for module `\RAMB16_S36'.
+Generating RTLIL representation for module `\RAMB16_S1_S1'.
+Generating RTLIL representation for module `\RAMB16_S1_S2'.
+Generating RTLIL representation for module `\RAMB16_S1_S4'.
+Generating RTLIL representation for module `\RAMB16_S1_S9'.
+Generating RTLIL representation for module `\RAMB16_S1_S18'.
+Generating RTLIL representation for module `\RAMB16_S1_S36'.
+Generating RTLIL representation for module `\RAMB16_S2_S2'.
+Generating RTLIL representation for module `\RAMB16_S2_S4'.
+Generating RTLIL representation for module `\RAMB16_S2_S9'.
+Generating RTLIL representation for module `\RAMB16_S2_S18'.
+Generating RTLIL representation for module `\RAMB16_S2_S36'.
+Generating RTLIL representation for module `\RAMB16_S4_S4'.
+Generating RTLIL representation for module `\RAMB16_S4_S9'.
+Generating RTLIL representation for module `\RAMB16_S4_S18'.
+Generating RTLIL representation for module `\RAMB16_S4_S36'.
+Generating RTLIL representation for module `\RAMB16_S9_S9'.
+Generating RTLIL representation for module `\RAMB16_S9_S18'.
+Generating RTLIL representation for module `\RAMB16_S9_S36'.
+Generating RTLIL representation for module `\RAMB16_S18_S18'.
+Generating RTLIL representation for module `\RAMB16_S18_S36'.
+Generating RTLIL representation for module `\RAMB16_S36_S36'.
+Generating RTLIL representation for module `\RAMB16BWE_S18'.
+Generating RTLIL representation for module `\RAMB16BWE_S36'.
+Generating RTLIL representation for module `\RAMB16BWE_S18_S9'.
+Generating RTLIL representation for module `\RAMB16BWE_S18_S18'.
+Generating RTLIL representation for module `\RAMB16BWE_S36_S9'.
+Generating RTLIL representation for module `\RAMB16BWE_S36_S18'.
+Generating RTLIL representation for module `\RAMB16BWE_S36_S36'.
+Generating RTLIL representation for module `\RAMB16BWER'.
+Generating RTLIL representation for module `\RAMB8BWER'.
+Generating RTLIL representation for module `\FIFO16'.
+Generating RTLIL representation for module `\RAMB16'.
+Generating RTLIL representation for module `\RAMB32_S64_ECC'.
+Generating RTLIL representation for module `\FIFO18'.
+Generating RTLIL representation for module `\FIFO18_36'.
+Generating RTLIL representation for module `\FIFO36'.
+Generating RTLIL representation for module `\FIFO36_72'.
+Generating RTLIL representation for module `\RAMB18'.
+Generating RTLIL representation for module `\RAMB36'.
+Generating RTLIL representation for module `\RAMB18SDP'.
+Generating RTLIL representation for module `\RAMB36SDP'.
+Generating RTLIL representation for module `\FIFO18E1'.
+Generating RTLIL representation for module `\FIFO36E1'.
+Generating RTLIL representation for module `\RAMB18E1'.
+Generating RTLIL representation for module `\RAMB36E1'.
+Generating RTLIL representation for module `\FIFO18E2'.
+Generating RTLIL representation for module `\FIFO36E2'.
+Generating RTLIL representation for module `\RAMB18E2'.
+Generating RTLIL representation for module `\RAMB36E2'.
+Generating RTLIL representation for module `\URAM288'.
+Generating RTLIL representation for module `\URAM288_BASE'.
+Generating RTLIL representation for module `\DSP48'.
+Generating RTLIL representation for module `\DSP48E'.
+Generating RTLIL representation for module `\DSP48E2'.
+Generating RTLIL representation for module `\IFDDRCPE'.
+Generating RTLIL representation for module `\IFDDRRSE'.
+Generating RTLIL representation for module `\OFDDRCPE'.
+Generating RTLIL representation for module `\OFDDRRSE'.
+Generating RTLIL representation for module `\OFDDRTCPE'.
+Generating RTLIL representation for module `\OFDDRTRSE'.
+Generating RTLIL representation for module `\IDDR2'.
+Generating RTLIL representation for module `\ODDR2'.
+Generating RTLIL representation for module `\IDDR'.
+Generating RTLIL representation for module `\IDDR_2CLK'.
+Generating RTLIL representation for module `\ODDR'.
+Generating RTLIL representation for module `\IDELAYCTRL'.
+Generating RTLIL representation for module `\IDELAY'.
+Generating RTLIL representation for module `\ISERDES'.
+Generating RTLIL representation for module `\OSERDES'.
+Generating RTLIL representation for module `\IODELAY'.
+Generating RTLIL representation for module `\ISERDES_NODELAY'.
+Generating RTLIL representation for module `\IODELAYE1'.
+Generating RTLIL representation for module `\ISERDESE1'.
+Generating RTLIL representation for module `\OSERDESE1'.
+Generating RTLIL representation for module `\IDELAYE2'.
+Generating RTLIL representation for module `\ODELAYE2'.
+Generating RTLIL representation for module `\ISERDESE2'.
+Generating RTLIL representation for module `\OSERDESE2'.
+Generating RTLIL representation for module `\PHASER_IN'.
+Generating RTLIL representation for module `\PHASER_IN_PHY'.
+Generating RTLIL representation for module `\PHASER_OUT'.
+Generating RTLIL representation for module `\PHASER_OUT_PHY'.
+Generating RTLIL representation for module `\PHASER_REF'.
+Generating RTLIL representation for module `\PHY_CONTROL'.
+Generating RTLIL representation for module `\IDDRE1'.
+Generating RTLIL representation for module `\ODDRE1'.
+Generating RTLIL representation for module `\IDELAYE3'.
+Generating RTLIL representation for module `\ODELAYE3'.
+Generating RTLIL representation for module `\ISERDESE3'.
+Generating RTLIL representation for module `\OSERDESE3'.
+Generating RTLIL representation for module `\BITSLICE_CONTROL'.
+Generating RTLIL representation for module `\RIU_OR'.
+Generating RTLIL representation for module `\RX_BITSLICE'.
+Generating RTLIL representation for module `\RXTX_BITSLICE'.
+Generating RTLIL representation for module `\TX_BITSLICE'.
+Generating RTLIL representation for module `\TX_BITSLICE_TRI'.
+Generating RTLIL representation for module `\IODELAY2'.
+Generating RTLIL representation for module `\IODRP2'.
+Generating RTLIL representation for module `\IODRP2_MCB'.
+Generating RTLIL representation for module `\ISERDES2'.
+Generating RTLIL representation for module `\OSERDES2'.
+Generating RTLIL representation for module `\IBUF_DLY_ADJ'.
+Generating RTLIL representation for module `\IBUF_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUF_INTERMDISABLE'.
+Generating RTLIL representation for module `\IBUF_ANALOG'.
+Generating RTLIL representation for module `\IBUFE3'.
+Generating RTLIL representation for module `\IBUFDS'.
+Generating RTLIL representation for module `\IBUFDS_DLY_ADJ'.
+Generating RTLIL representation for module `\IBUFDS_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_INTERMDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT_IBUFDISABLE'.
+Generating RTLIL representation for module `\IBUFDS_DIFF_OUT_INTERMDISABLE'.
+Generating RTLIL representation for module `\IBUFDSE3'.
+Generating RTLIL representation for module `\IBUFDS_DPHY'.
+Generating RTLIL representation for module `\IBUFGDS'.
+Generating RTLIL representation for module `\IBUFGDS_DIFF_OUT'.
+Generating RTLIL representation for module `\IOBUF_DCIEN'.
+Generating RTLIL representation for module `\IOBUF_INTERMDISABLE'.
+Generating RTLIL representation for module `\IOBUFE3'.
+Generating RTLIL representation for module `\IOBUFDS'.
+Generating RTLIL representation for module `\IOBUFDS_DCIEN'.
+Generating RTLIL representation for module `\IOBUFDS_INTERMDISABLE'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT_DCIEN'.
+Generating RTLIL representation for module `\IOBUFDS_DIFF_OUT_INTERMDISABLE'.
+Generating RTLIL representation for module `\IOBUFDSE3'.
+Generating RTLIL representation for module `\OBUFDS'.
+Generating RTLIL representation for module `\OBUFDS_DPHY'.
+Generating RTLIL representation for module `\OBUFTDS'.
+Generating RTLIL representation for module `\KEEPER'.
+Generating RTLIL representation for module `\PULLDOWN'.
+Generating RTLIL representation for module `\PULLUP'.
+Generating RTLIL representation for module `\DCIRESET'.
+Generating RTLIL representation for module `\HPIO_VREF'.
+Generating RTLIL representation for module `\BUFGCE'.
+Generating RTLIL representation for module `\BUFGCE_1'.
+Generating RTLIL representation for module `\BUFGMUX'.
+Generating RTLIL representation for module `\BUFGMUX_1'.
+Generating RTLIL representation for module `\BUFGMUX_CTRL'.
+Generating RTLIL representation for module `\BUFGMUX_VIRTEX4'.
+Generating RTLIL representation for module `\BUFG_GT'.
+Generating RTLIL representation for module `\BUFG_GT_SYNC'.
+Generating RTLIL representation for module `\BUFG_PS'.
+Generating RTLIL representation for module `\BUFGCE_DIV'.
+Generating RTLIL representation for module `\BUFH'.
+Generating RTLIL representation for module `\BUFIO2'.
+Generating RTLIL representation for module `\BUFIO2_2CLK'.
+Generating RTLIL representation for module `\BUFIO2FB'.
+Generating RTLIL representation for module `\BUFPLL'.
+Generating RTLIL representation for module `\BUFPLL_MCB'.
+Generating RTLIL representation for module `\BUFIO'.
+Generating RTLIL representation for module `\BUFIODQS'.
+Generating RTLIL representation for module `\BUFR'.
+Generating RTLIL representation for module `\BUFMR'.
+Generating RTLIL representation for module `\BUFMRCE'.
+Generating RTLIL representation for module `\DCM'.
+Generating RTLIL representation for module `\DCM_SP'.
+Generating RTLIL representation for module `\DCM_CLKGEN'.
+Generating RTLIL representation for module `\DCM_ADV'.
+Generating RTLIL representation for module `\DCM_BASE'.
+Generating RTLIL representation for module `\DCM_PS'.
+Generating RTLIL representation for module `\PMCD'.
+Generating RTLIL representation for module `\PLL_ADV'.
+Generating RTLIL representation for module `\PLL_BASE'.
+Generating RTLIL representation for module `\MMCM_ADV'.
+Generating RTLIL representation for module `\MMCM_BASE'.
+Generating RTLIL representation for module `\MMCME2_ADV'.
+Generating RTLIL representation for module `\MMCME2_BASE'.
+Generating RTLIL representation for module `\PLLE2_ADV'.
+Generating RTLIL representation for module `\PLLE2_BASE'.
+Generating RTLIL representation for module `\MMCME3_ADV'.
+Generating RTLIL representation for module `\MMCME3_BASE'.
+Generating RTLIL representation for module `\PLLE3_ADV'.
+Generating RTLIL representation for module `\PLLE3_BASE'.
+Generating RTLIL representation for module `\MMCME4_ADV'.
+Generating RTLIL representation for module `\MMCME4_BASE'.
+Generating RTLIL representation for module `\PLLE4_ADV'.
+Generating RTLIL representation for module `\PLLE4_BASE'.
+Generating RTLIL representation for module `\BUFT'.
+Generating RTLIL representation for module `\IN_FIFO'.
+Generating RTLIL representation for module `\OUT_FIFO'.
+Generating RTLIL representation for module `\HARD_SYNC'.
+Generating RTLIL representation for module `\STARTUP_SPARTAN3'.
+Generating RTLIL representation for module `\STARTUP_SPARTAN3E'.
+Generating RTLIL representation for module `\STARTUP_SPARTAN3A'.
+Generating RTLIL representation for module `\STARTUP_SPARTAN6'.
+Generating RTLIL representation for module `\STARTUP_VIRTEX4'.
+Generating RTLIL representation for module `\STARTUP_VIRTEX5'.
+Generating RTLIL representation for module `\STARTUP_VIRTEX6'.
+Generating RTLIL representation for module `\STARTUPE2'.
+Generating RTLIL representation for module `\STARTUPE3'.
+Generating RTLIL representation for module `\CAPTURE_SPARTAN3'.
+Generating RTLIL representation for module `\CAPTURE_SPARTAN3A'.
+Generating RTLIL representation for module `\CAPTURE_VIRTEX4'.
+Generating RTLIL representation for module `\CAPTURE_VIRTEX5'.
+Generating RTLIL representation for module `\CAPTURE_VIRTEX6'.
+Generating RTLIL representation for module `\CAPTUREE2'.
+Generating RTLIL representation for module `\ICAP_SPARTAN3A'.
+Generating RTLIL representation for module `\ICAP_SPARTAN6'.
+Generating RTLIL representation for module `\ICAP_VIRTEX4'.
+Generating RTLIL representation for module `\ICAP_VIRTEX5'.
+Generating RTLIL representation for module `\ICAP_VIRTEX6'.
+Generating RTLIL representation for module `\ICAPE2'.
+Generating RTLIL representation for module `\ICAPE3'.
+Generating RTLIL representation for module `\BSCAN_SPARTAN3'.
+Generating RTLIL representation for module `\BSCAN_SPARTAN3A'.
+Generating RTLIL representation for module `\BSCAN_SPARTAN6'.
+Generating RTLIL representation for module `\BSCAN_VIRTEX4'.
+Generating RTLIL representation for module `\BSCAN_VIRTEX5'.
+Generating RTLIL representation for module `\BSCAN_VIRTEX6'.
+Generating RTLIL representation for module `\BSCANE2'.
+Generating RTLIL representation for module `\DNA_PORT'.
+Generating RTLIL representation for module `\DNA_PORTE2'.
+Generating RTLIL representation for module `\FRAME_ECC_VIRTEX4'.
+Generating RTLIL representation for module `\FRAME_ECC_VIRTEX5'.
+Generating RTLIL representation for module `\FRAME_ECC_VIRTEX6'.
+Generating RTLIL representation for module `\FRAME_ECCE2'.
+Generating RTLIL representation for module `\FRAME_ECCE3'.
+Generating RTLIL representation for module `\USR_ACCESS_VIRTEX4'.
+Generating RTLIL representation for module `\USR_ACCESS_VIRTEX5'.
+Generating RTLIL representation for module `\USR_ACCESS_VIRTEX6'.
+Generating RTLIL representation for module `\USR_ACCESSE2'.
+Generating RTLIL representation for module `\POST_CRC_INTERNAL'.
+Generating RTLIL representation for module `\SUSPEND_SYNC'.
+Generating RTLIL representation for module `\KEY_CLEAR'.
+Generating RTLIL representation for module `\MASTER_JTAG'.
+Generating RTLIL representation for module `\SPI_ACCESS'.
+Generating RTLIL representation for module `\EFUSE_USR'.
+Generating RTLIL representation for module `\SYSMON'.
+Generating RTLIL representation for module `\XADC'.
+Generating RTLIL representation for module `\SYSMONE1'.
+Generating RTLIL representation for module `\SYSMONE4'.
+Generating RTLIL representation for module `\GTPA1_DUAL'.
+Generating RTLIL representation for module `\GT11_CUSTOM'.
+Generating RTLIL representation for module `\GT11_DUAL'.
+Generating RTLIL representation for module `\GT11CLK'.
+Generating RTLIL representation for module `\GT11CLK_MGT'.
+Generating RTLIL representation for module `\GTP_DUAL'.
+Generating RTLIL representation for module `\GTX_DUAL'.
+Generating RTLIL representation for module `\CRC32'.
+Generating RTLIL representation for module `\CRC64'.
+Generating RTLIL representation for module `\GTHE1_QUAD'.
+Generating RTLIL representation for module `\GTXE1'.
+Generating RTLIL representation for module `\IBUFDS_GTXE1'.
+Generating RTLIL representation for module `\IBUFDS_GTHE1'.
+Generating RTLIL representation for module `\GTHE2_CHANNEL'.
+Generating RTLIL representation for module `\GTHE2_COMMON'.
+Generating RTLIL representation for module `\GTPE2_CHANNEL'.
+Generating RTLIL representation for module `\GTPE2_COMMON'.
+Generating RTLIL representation for module `\GTXE2_CHANNEL'.
+Generating RTLIL representation for module `\GTXE2_COMMON'.
+Generating RTLIL representation for module `\IBUFDS_GTE2'.
+Generating RTLIL representation for module `\GTHE3_CHANNEL'.
+Generating RTLIL representation for module `\GTHE3_COMMON'.
+Generating RTLIL representation for module `\GTHE4_CHANNEL'.
+Generating RTLIL representation for module `\GTHE4_COMMON'.
+Generating RTLIL representation for module `\GTYE3_CHANNEL'.
+Generating RTLIL representation for module `\GTYE3_COMMON'.
+Generating RTLIL representation for module `\GTYE4_CHANNEL'.
+Generating RTLIL representation for module `\GTYE4_COMMON'.
+Generating RTLIL representation for module `\IBUFDS_GTE3'.
+Generating RTLIL representation for module `\IBUFDS_GTE4'.
+Generating RTLIL representation for module `\OBUFDS_GTE3'.
+Generating RTLIL representation for module `\OBUFDS_GTE3_ADV'.
+Generating RTLIL representation for module `\OBUFDS_GTE4'.
+Generating RTLIL representation for module `\OBUFDS_GTE4_ADV'.
+Generating RTLIL representation for module `\PCIE_A1'.
+Generating RTLIL representation for module `\PCIE_EP'.
+Generating RTLIL representation for module `\PCIE_2_0'.
+Generating RTLIL representation for module `\PCIE_2_1'.
+Generating RTLIL representation for module `\PCIE_3_0'.
+Generating RTLIL representation for module `\PCIE_3_1'.
+Generating RTLIL representation for module `\PCIE40E4'.
+Generating RTLIL representation for module `\EMAC'.
+Generating RTLIL representation for module `\TEMAC'.
+Generating RTLIL representation for module `\TEMAC_SINGLE'.
+Generating RTLIL representation for module `\CMAC'.
+Generating RTLIL representation for module `\CMACE4'.
+Generating RTLIL representation for module `\PPC405_ADV'.
+Generating RTLIL representation for module `\PPC440'.
+Generating RTLIL representation for module `\MCB'.
+Generating RTLIL representation for module `\PS7'.
+Generating RTLIL representation for module `\PS8'.
+Generating RTLIL representation for module `\ILKN'.
+Generating RTLIL representation for module `\ILKNE4'.
+Successfully finished Verilog frontend.
+
+3.3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.3.1. Finding top of design hierarchy..
+root of   0 design levels: rams_sp_rf          
+Automatically selected rams_sp_rf as design top module.
+
+3.3.2. Analyzing design hierarchy..
+Top module:  \rams_sp_rf
+
+3.3.3. Analyzing design hierarchy..
+Top module:  \rams_sp_rf
+Removed 0 unused modules.
+
+3.4. Executing PROC pass (convert processes to netlists).
+
+3.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.4.4. Executing PROC_INIT pass (extract init attributes).
+
+3.4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.4.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\rams_sp_rf.$proc$/home/diego/bram_tests/rams_sp_rf.v:15$9'.
+     1/4: $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12
+     2/4: $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_DATA[5:0]$11
+     3/4: $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_ADDR[1:0]$10
+     4/4: $0\dout[5:0]
+
+3.4.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.4.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\rams_sp_rf.\dout' using process `\rams_sp_rf.$proc$/home/diego/bram_tests/rams_sp_rf.v:15$9'.
+  created $dff cell `$procdff$42' with positive edge clock.
+Creating register for signal `\rams_sp_rf.$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_ADDR' using process `\rams_sp_rf.$proc$/home/diego/bram_tests/rams_sp_rf.v:15$9'.
+  created $dff cell `$procdff$43' with positive edge clock.
+Creating register for signal `\rams_sp_rf.$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_DATA' using process `\rams_sp_rf.$proc$/home/diego/bram_tests/rams_sp_rf.v:15$9'.
+  created $dff cell `$procdff$44' with positive edge clock.
+Creating register for signal `\rams_sp_rf.$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN' using process `\rams_sp_rf.$proc$/home/diego/bram_tests/rams_sp_rf.v:15$9'.
+  created $dff cell `$procdff$45' with positive edge clock.
+
+3.4.9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\rams_sp_rf.$proc$/home/diego/bram_tests/rams_sp_rf.v:15$9'.
+Removing empty process `rams_sp_rf.$proc$/home/diego/bram_tests/rams_sp_rf.v:15$9'.
+Cleaned up 2 empty switches.
+
+3.5. Executing FLATTEN pass (flatten design).
+No more expansions possible.
+
+3.6. Executing TRIBUF pass.
+
+3.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+3.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+Removed 0 unused cells and 11 unused wires.
+<suppressed ~1 debug messages>
+
+3.10. Executing CHECK pass (checking for obvious problems).
+checking module rams_sp_rf..
+found and reported 0 problems.
+
+3.11. Executing OPT pass (performing simple optimizations).
+
+3.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rams_sp_rf..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+3.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rams_sp_rf.
+    Consolidated identical input bits for $mux cell $procmux$28:
+      Old ports: A=6'000000, B=6'111111, Y=$procmux$28_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$28_Y [0]
+      New connections: $procmux$28_Y [5:1] = { $procmux$28_Y [0] $procmux$28_Y [0] $procmux$28_Y [0] $procmux$28_Y [0] $procmux$28_Y [0] }
+  Optimizing cells in module \rams_sp_rf.
+    Consolidated identical input bits for $mux cell $procmux$30:
+      Old ports: A=6'000000, B=$procmux$28_Y, Y=$0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12
+      New ports: A=1'0, B=$procmux$28_Y [0], Y=$0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12 [0]
+      New connections: $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12 [5:1] = { $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12 [0] $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12 [0] $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12 [0] $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12 [0] $0$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$8_EN[5:0]$12 [0] }
+  Optimizing cells in module \rams_sp_rf.
+Performed a total of 2 changes.
+
+3.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.11.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rams_sp_rf..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+3.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rams_sp_rf.
+Performed a total of 0 changes.
+
+3.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.11.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.11.16. Finished OPT passes. (There is nothing left to do.)
+
+3.12. Executing WREDUCE pass (reducing word size of cells).
+Removed cell rams_sp_rf.$procmux$32 ($mux).
+Removed cell rams_sp_rf.$procmux$34 ($mux).
+Removed cell rams_sp_rf.$procmux$36 ($mux).
+Removed cell rams_sp_rf.$procmux$38 ($mux).
+Removed top 5 bits (of 6) from FF cell rams_sp_rf.$procdff$45 ($dff).
+
+3.13. Executing PEEPOPT pass (run peephole optimizers).
+
+3.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+3.15. Executing PMUX2SHIFTX pass.
+
+3.16. Executing TECHMAP pass (map to technology primitives).
+
+3.16.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/cmp2lut.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+3.16.2. Continuing TECHMAP pass.
+No more expansions possible.
+
+3.17. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+Checking cell `$memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$14' in module `\rams_sp_rf': merged $dff to cell.
+Checking cell `$memrd$\RAM$/home/diego/bram_tests/rams_sp_rf.v:21$13' in module `\rams_sp_rf': merged data $dff with rd enable to cell.
+
+3.18. Executing TECHMAP pass (map to technology primitives).
+
+3.18.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/mul2dsp.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+3.18.2. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/xc7_dsp_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/xc7_dsp_map.v' to AST representation.
+Generating RTLIL representation for module `\$__MUL25X18'.
+Successfully finished Verilog frontend.
+
+3.18.3. Continuing TECHMAP pass.
+No more expansions possible.
+
+3.19. Executing OPT_EXPR pass (perform const folding).
+
+3.20. Executing WREDUCE pass (reducing word size of cells).
+
+3.21. Executing XILINX_DSP pass (pack resources into DSPs).
+
+3.22. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module rams_sp_rf:
+  created 0 $alu and 0 $macc cells.
+
+3.23. Executing SHARE pass (SAT-based resource sharing).
+
+3.24. Executing OPT pass (performing simple optimizations).
+
+3.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.24.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rams_sp_rf..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~2 debug messages>
+
+3.24.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rams_sp_rf.
+Performed a total of 0 changes.
+
+3.24.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.24.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.24.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+Removed 5 unused cells and 6 unused wires.
+<suppressed ~6 debug messages>
+
+3.24.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.24.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.24.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rams_sp_rf..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~1 debug messages>
+
+3.24.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rams_sp_rf.
+Performed a total of 0 changes.
+
+3.24.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.24.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.24.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.24.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.24.16. Finished OPT passes. (There is nothing left to do.)
+
+3.25. Executing FSM pass (extract and optimize FSM).
+
+3.25.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+3.25.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+3.25.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.25.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.25.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.25.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+3.25.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+3.25.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+3.26. Executing OPT pass (performing simple optimizations).
+
+3.26.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.26.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.26.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.26.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.26.5. Finished fast OPT passes.
+
+3.27. Executing MEMORY pass.
+
+3.27.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+3.27.2. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+
+3.27.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.27.4. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+3.27.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.27.6. Executing MEMORY_COLLECT pass (generating $mem cells).
+Collecting $memrd, $memwr and $meminit for memory `\RAM' in module `\rams_sp_rf':
+  $memwr$\RAM$/home/diego/bram_tests/rams_sp_rf.v:20$14 ($memwr)
+  $memrd$\RAM$/home/diego/bram_tests/rams_sp_rf.v:21$13 ($memrd)
+
+3.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.29. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+Processing rams_sp_rf.RAM:
+  Properties: ports=2 bits=24 rports=1 wports=1 dbits=6 abits=2 words=4
+  Checking rule #1 for bram type $__XILINX_RAMB36_SDP (variant 1):
+    Bram geometry: abits=9 dbits=72 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB36_SDP: awaste=508 dwaste=66 bwaste=36840 waste=36840 efficiency=0
+    Rule #1 for bram type $__XILINX_RAMB36_SDP (variant 1) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #2 for bram type $__XILINX_RAMB18_SDP (variant 1):
+    Bram geometry: abits=9 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB18_SDP: awaste=508 dwaste=30 bwaste=18408 waste=18408 efficiency=0
+    Rule #2 for bram type $__XILINX_RAMB18_SDP (variant 1) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #3 for bram type $__XILINX_RAMB36_TDP (variant 1):
+    Bram geometry: abits=10 dbits=36 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB36_TDP: awaste=1020 dwaste=30 bwaste=36840 waste=36840 efficiency=0
+    Rule #3 for bram type $__XILINX_RAMB36_TDP (variant 1) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #3 for bram type $__XILINX_RAMB36_TDP (variant 2):
+    Bram geometry: abits=11 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB36_TDP: awaste=2044 dwaste=12 bwaste=36840 waste=36840 efficiency=0
+    Rule #3 for bram type $__XILINX_RAMB36_TDP (variant 2) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #3 for bram type $__XILINX_RAMB36_TDP (variant 3):
+    Bram geometry: abits=12 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB36_TDP: awaste=4092 dwaste=3 bwaste=36840 waste=36840 efficiency=0
+    Rule #3 for bram type $__XILINX_RAMB36_TDP (variant 3) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #3 for bram type $__XILINX_RAMB36_TDP (variant 4):
+    Bram geometry: abits=13 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB36_TDP: awaste=8188 dwaste=2 bwaste=32760 waste=32760 efficiency=0
+    Rule #3 for bram type $__XILINX_RAMB36_TDP (variant 4) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #3 for bram type $__XILINX_RAMB36_TDP (variant 5):
+    Bram geometry: abits=14 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB36_TDP: awaste=16380 dwaste=0 bwaste=32760 waste=32760 efficiency=0
+    Rule #3 for bram type $__XILINX_RAMB36_TDP (variant 5) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #3 for bram type $__XILINX_RAMB36_TDP (variant 6):
+    Bram geometry: abits=15 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB36_TDP: awaste=32764 dwaste=0 bwaste=32764 waste=32764 efficiency=0
+    Rule #3 for bram type $__XILINX_RAMB36_TDP (variant 6) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #4 for bram type $__XILINX_RAMB18_TDP (variant 1):
+    Bram geometry: abits=10 dbits=18 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB18_TDP: awaste=1020 dwaste=12 bwaste=18408 waste=18408 efficiency=0
+    Rule #4 for bram type $__XILINX_RAMB18_TDP (variant 1) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #4 for bram type $__XILINX_RAMB18_TDP (variant 2):
+    Bram geometry: abits=11 dbits=9 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB18_TDP: awaste=2044 dwaste=3 bwaste=18408 waste=18408 efficiency=0
+    Rule #4 for bram type $__XILINX_RAMB18_TDP (variant 2) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #4 for bram type $__XILINX_RAMB18_TDP (variant 3):
+    Bram geometry: abits=12 dbits=4 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB18_TDP: awaste=4092 dwaste=2 bwaste=16376 waste=16376 efficiency=0
+    Rule #4 for bram type $__XILINX_RAMB18_TDP (variant 3) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #4 for bram type $__XILINX_RAMB18_TDP (variant 4):
+    Bram geometry: abits=13 dbits=2 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB18_TDP: awaste=8188 dwaste=0 bwaste=16376 waste=16376 efficiency=0
+    Rule #4 for bram type $__XILINX_RAMB18_TDP (variant 4) rejected: requirement 'min efficiency 5' not met.
+  Checking rule #4 for bram type $__XILINX_RAMB18_TDP (variant 5):
+    Bram geometry: abits=14 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAMB18_TDP: awaste=16380 dwaste=0 bwaste=16380 waste=16380 efficiency=0
+    Rule #4 for bram type $__XILINX_RAMB18_TDP (variant 5) rejected: requirement 'min efficiency 5' not met.
+  No acceptable bram resources found.
+
+3.30. Executing TECHMAP pass (map to technology primitives).
+
+3.30.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/xc7_brams_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/xc7_brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__XILINX_RAMB36_SDP'.
+Generating RTLIL representation for module `\$__XILINX_RAMB18_SDP'.
+Generating RTLIL representation for module `\$__XILINX_RAMB36_TDP'.
+Generating RTLIL representation for module `\$__XILINX_RAMB18_TDP'.
+Successfully finished Verilog frontend.
+
+3.30.2. Continuing TECHMAP pass.
+No more expansions possible.
+
+3.31. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+Processing rams_sp_rf.RAM:
+  Properties: ports=2 bits=24 rports=1 wports=1 dbits=6 abits=2 words=4
+  Checking rule #1 for bram type $__XILINX_RAM32X1D (variant 1):
+    Bram geometry: abits=5 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAM32X1D: awaste=28 dwaste=0 bwaste=28 waste=28 efficiency=12
+    Rule #1 for bram type $__XILINX_RAM32X1D (variant 1) accepted.
+    Mapping to bram type $__XILINX_RAM32X1D (variant 1):
+      Write port #0 is in clock domain \clk.
+        Mapped to bram port B1.
+      Read port #0 is in clock domain \clk.
+        Mapped to bram port A1.1.
+      Updated properties: dups=1 waste=28 efficiency=12
+      Storing for later selection.
+  Checking rule #2 for bram type $__XILINX_RAM64X1D (variant 1):
+    Bram geometry: abits=6 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAM64X1D: awaste=60 dwaste=0 bwaste=60 waste=60 efficiency=6
+    Rule #2 for bram type $__XILINX_RAM64X1D (variant 1) accepted.
+    Mapping to bram type $__XILINX_RAM64X1D (variant 1):
+      Write port #0 is in clock domain \clk.
+        Mapped to bram port B1.
+      Read port #0 is in clock domain \clk.
+        Mapped to bram port A1.1.
+      Updated properties: dups=1 waste=60 efficiency=6
+      Storing for later selection.
+  Checking rule #3 for bram type $__XILINX_RAM128X1D (variant 1):
+    Bram geometry: abits=7 dbits=1 wports=0 rports=0
+    Estimated number of duplicates for more read ports: dups=1
+    Metrics for $__XILINX_RAM128X1D: awaste=124 dwaste=0 bwaste=124 waste=124 efficiency=3
+    Rule #3 for bram type $__XILINX_RAM128X1D (variant 1) accepted.
+    Mapping to bram type $__XILINX_RAM128X1D (variant 1):
+      Write port #0 is in clock domain \clk.
+        Mapped to bram port B1.
+      Read port #0 is in clock domain \clk.
+        Mapped to bram port A1.1.
+      Updated properties: dups=1 waste=124 efficiency=3
+      Storing for later selection.
+  Selecting best of 3 rules:
+    Efficiency for rule 3.1: efficiency=3, cells=6, acells=1
+    Efficiency for rule 2.1: efficiency=6, cells=6, acells=1
+    Efficiency for rule 1.1: efficiency=12, cells=6, acells=1
+    Selected rule 1.1 with efficiency 12.
+    Mapping to bram type $__XILINX_RAM32X1D (variant 1):
+      Write port #0 is in clock domain \clk.
+        Mapped to bram port B1.
+      Read port #0 is in clock domain \clk.
+        Mapped to bram port A1.1.
+      Creating $__XILINX_RAM32X1D cell at grid position <0 0 0>: RAM.0.0.0
+      Creating $__XILINX_RAM32X1D cell at grid position <1 0 0>: RAM.1.0.0
+      Creating $__XILINX_RAM32X1D cell at grid position <2 0 0>: RAM.2.0.0
+      Creating $__XILINX_RAM32X1D cell at grid position <3 0 0>: RAM.3.0.0
+      Creating $__XILINX_RAM32X1D cell at grid position <4 0 0>: RAM.4.0.0
+      Creating $__XILINX_RAM32X1D cell at grid position <5 0 0>: RAM.5.0.0
+
+3.32. Executing TECHMAP pass (map to technology primitives).
+
+3.32.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/lutrams_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/lutrams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__XILINX_RAM32X1D'.
+Generating RTLIL representation for module `\$__XILINX_RAM64X1D'.
+Generating RTLIL representation for module `\$__XILINX_RAM128X1D'.
+Successfully finished Verilog frontend.
+
+3.32.2. Continuing TECHMAP pass.
+Using template $paramod\$__XILINX_RAM32X1D\CLKPOL2=1 for cells of type $__XILINX_RAM32X1D.
+No more expansions possible.
+<suppressed ~17 debug messages>
+
+3.33. Executing OPT pass (performing simple optimizations).
+
+3.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+<suppressed ~2 debug messages>
+
+3.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.33.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+Removed 0 unused cells and 43 unused wires.
+<suppressed ~1 debug messages>
+
+3.33.5. Finished fast OPT passes.
+
+3.34. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
+
+3.35. Executing DFFSR2DFF pass (mapping DFFSR cells to simpler FFs).
+
+3.36. Executing DFF2DFFE pass (transform $dff to $dffe where applicable).
+Transforming FF to FF+Enable cells in module rams_sp_rf:
+  created $dffe cell $auto$dff2dffe.cc:215:handle_dff_cell$88 for $auto$rtlil.cc:1936:Mux$55 -> \dout [0].
+  removing now obsolete cell $auto$memory_bram.cc:937:replace_cell$56.
+  created $dffe cell $auto$dff2dffe.cc:215:handle_dff_cell$91 for $auto$rtlil.cc:1936:Mux$60 -> \dout [1].
+  removing now obsolete cell $auto$memory_bram.cc:937:replace_cell$61.
+  created $dffe cell $auto$dff2dffe.cc:215:handle_dff_cell$94 for $auto$rtlil.cc:1936:Mux$65 -> \dout [2].
+  removing now obsolete cell $auto$memory_bram.cc:937:replace_cell$66.
+  created $dffe cell $auto$dff2dffe.cc:215:handle_dff_cell$97 for $auto$rtlil.cc:1936:Mux$70 -> \dout [3].
+  removing now obsolete cell $auto$memory_bram.cc:937:replace_cell$71.
+  created $dffe cell $auto$dff2dffe.cc:215:handle_dff_cell$100 for $auto$rtlil.cc:1936:Mux$75 -> \dout [4].
+  removing now obsolete cell $auto$memory_bram.cc:937:replace_cell$76.
+  created $dffe cell $auto$dff2dffe.cc:215:handle_dff_cell$103 for $auto$rtlil.cc:1936:Mux$80 -> \dout [5].
+  removing now obsolete cell $auto$memory_bram.cc:937:replace_cell$81.
+
+3.37. Executing OPT pass (performing simple optimizations).
+
+3.37.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+<suppressed ~12 debug messages>
+
+3.37.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.37.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \rams_sp_rf..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.37.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \rams_sp_rf.
+Performed a total of 0 changes.
+
+3.37.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.37.6. Executing OPT_SHARE pass.
+
+3.37.7. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.37.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+Removed 0 unused cells and 12 unused wires.
+<suppressed ~1 debug messages>
+
+3.37.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.37.10. Finished OPT passes. (There is nothing left to do.)
+
+3.38. Executing XILINX_SRL pass (Xilinx shift register extraction).
+
+3.39. Executing TECHMAP pass (map to technology primitives).
+
+3.39.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/techmap.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+3.39.2. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/arith_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_xilinx_lcu'.
+Generating RTLIL representation for module `\_80_xilinx_alu'.
+Successfully finished Verilog frontend.
+
+3.39.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $dffe.
+No more expansions possible.
+<suppressed ~7 debug messages>
+
+3.40. Executing OPT pass (performing simple optimizations).
+
+3.40.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.40.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\rams_sp_rf'.
+Removed a total of 0 cells.
+
+3.40.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+3.40.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \rams_sp_rf..
+
+3.40.5. Finished fast OPT passes.
+
+3.41. Executing TECHMAP pass (map to technology primitives).
+
+3.41.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/techmap.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+3.41.2. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/cells_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\_90_dff_nn0_to_np0'.
+Generating RTLIL representation for module `\_90_dff_pn0_to_pp0'.
+Generating RTLIL representation for module `\_90_dff_nn1_to_np1'.
+Generating RTLIL representation for module `\_90_dff_pn1_to_pp1'.
+Generating RTLIL representation for module `\$__SHREG_'.
+Generating RTLIL representation for module `\$__XILINX_SHREG_'.
+Generating RTLIL representation for module `\$__XILINX_MUXF78'.
+Generating RTLIL representation for module `\$__XILINX_TINOUTPAD'.
+Generating RTLIL representation for module `\$__XILINX_TOUTPAD'.
+Successfully finished Verilog frontend.
+
+3.41.3. Continuing TECHMAP pass.
+No more expansions possible.
+
+3.42. Executing TECHMAP pass (map to technology primitives).
+
+3.42.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/xc7_ff_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/xc7_ff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFF_NN0_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_PN0_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_NN1_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PN1_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+3.42.2. Continuing TECHMAP pass.
+Using template $paramod\$_DFFE_PP_\_TECHMAP_WIREINIT_Q_=1'x for cells of type $_DFFE_PP_.
+No more expansions possible.
+<suppressed ~17 debug messages>
+
+3.43. Executing OPT_EXPR pass (perform const folding).
+Optimizing module rams_sp_rf.
+
+3.44. Executing TECHMAP pass (map to technology primitives).
+
+3.44.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/abc9_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/abc9_map.v' to AST representation.
+Generating RTLIL representation for module `\RAM32X1D'.
+Generating RTLIL representation for module `\RAM64X1D'.
+Generating RTLIL representation for module `\RAM128X1D'.
+Generating RTLIL representation for module `\SRL16E'.
+Generating RTLIL representation for module `\SRLC32E'.
+Generating RTLIL representation for module `\DSP48E1'.
+Successfully finished Verilog frontend.
+
+3.44.2. Continuing TECHMAP pass.
+Using template $paramod$28e244a1308df843a1293a31d7ce146bf1fd525e\RAM32X1D for cells of type RAM32X1D.
+No more expansions possible.
+<suppressed ~19 debug messages>
+
+3.45. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/abc9_model.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__XILINX_MUXF78'.
+Generating RTLIL representation for module `$__ABC9_LUT6'.
+Generating RTLIL representation for module `$__ABC9_LUT7'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1_MULT_P_MUX'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1_MULT_PCOUT_MUX'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1_MULT_DPORT_P_MUX'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1_MULT_DPORT_PCOUT_MUX'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1_P_MUX'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1_PCOUT_MUX'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1_MULT'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1_MULT_DPORT'.
+Generating RTLIL representation for module `$__ABC9_DSP48E1'.
+Successfully finished Verilog frontend.
+
+3.46. Executing ABC9 pass (technology mapping using ABC9).
+
+3.46.1. Extracting gate netlist of module `\rams_sp_rf' to `<abc-temp-dir>/input.xaig'..
+
+3.46.1.1. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module rams_sp_rf.
+Found 0 SCCs.
+
+3.46.1.2. Executing AIGMAP pass (map logic to AIG).
+Module rams_sp_rf: replaced 0 cells with 0 new cells, skipped 25 cells.
+  not replaced 4 cell types:
+       1 $_AND_
+       6 FDRE
+       6 RAM32X1D
+      12 $__ABC9_LUT6
+
+3.46.1.3. Executing XAIGER backend.
+
+3.46.1.3.1. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$__holes__'.
+<suppressed ~5 debug messages>
+Removed a total of 0 cells.
+
+3.46.1.3.2. Executing FLATTEN pass (flatten design).
+No more expansions possible.
+
+3.46.1.3.3. Executing TECHMAP pass (map to technology primitives).
+
+3.46.1.3.3.1. Executing Verilog-2005 frontend: <techmap.v>
+Parsing Verilog input from `<techmap.v>' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+3.46.1.3.3.2. Continuing TECHMAP pass.
+No more expansions possible.
+
+3.46.1.3.4. Executing AIGMAP pass (map logic to AIG).
+<suppressed ~5 debug messages>
+
+3.46.1.4. Executing ABC9.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_lut <yosys-exe-dir>/share/xilinx/abc9_xc7.lut 
+ABC: + read_box -v <yosys-exe-dir>/share/xilinx/abc9_xc7.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =     29/     23  and =       1  lev =    1 (0.01)  mem = 0.00 MB  box = 12  bb = 12
+ABC: + &st 
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &st 
+ABC: + &dch -f 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =     29/     23  and =       1  lev =    1 (0.02)  mem = 0.00 MB  ch =    0  box = 6  bb = 6
+ABC: + &if -W 300 -v 
+ABC: K = 8. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =       1.  Ch =     0.  Total mem =    0.02 MB. Peak cut mem =    0.00 MB.
+ABC: P:  Del = 1153.00.  Ar =       2.0.  Edge =        2.  Cut =        1.  T =     0.00 sec
+ABC: P:  Del = 1153.00.  Ar =       2.0.  Edge =        2.  Cut =        1.  T =     0.00 sec
+ABC: P:  Del = 1153.00.  Ar =       2.0.  Edge =        2.  Cut =        1.  T =     0.00 sec
+ABC: F:  Del = 1153.00.  Ar =       2.0.  Edge =        2.  Cut =        1.  T =     0.00 sec
+ABC: A:  Del = 1153.00.  Ar =       2.0.  Edge =        2.  Cut =        1.  T =     0.00 sec
+ABC: A:  Del = 1153.00.  Ar =       2.0.  Edge =        2.  Cut =        1.  T =     0.00 sec
+ABC: Total time =     0.00 sec
+ABC: + 
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =     29/     23  and =       1  lev =    1 (0.02)  mem = 0.00 MB  box = 6  bb = 6
+ABC: Mapping (K=2)  :  lut =      1  edge =       2  lev =    1 (0.02)  levB =    1  mem = 0.00 MB
+ABC: LUT = 1 : 2=1 100.0 %  Ave = 2.00
+ABC: + &write <abc-temp-dir>/output.aig 
+<suppressed ~113 debug messages>
+Removed 0 unused cells and 71 unused wires.
+
+3.46.1.5. Re-integrating ABC9 results.
+ABC RESULTS:              $lut cells:        1
+ABC RESULTS:      $__ABC9_LUT6 cells:        6
+ABC RESULTS:           input signals:       18
+ABC RESULTS:          output signals:        7
+Removing temp directory.
+Removed 0 unused cells and 164 unused wires.
+
+3.47. Executing XILINX_SRL pass (Xilinx shift register extraction).
+
+3.48. Executing TECHMAP pass (map to technology primitives).
+
+3.48.1. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/lut_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/lut_map.v' to AST representation.
+Generating RTLIL representation for module `\$lut'.
+Successfully finished Verilog frontend.
+
+3.48.2. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/cells_map.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\_90_dff_nn0_to_np0'.
+Generating RTLIL representation for module `\_90_dff_pn0_to_pp0'.
+Generating RTLIL representation for module `\_90_dff_nn1_to_np1'.
+Generating RTLIL representation for module `\_90_dff_pn1_to_pp1'.
+Generating RTLIL representation for module `\$__SHREG_'.
+Generating RTLIL representation for module `\$__XILINX_SHREG_'.
+Generating RTLIL representation for module `\$__XILINX_MUXF78'.
+Generating RTLIL representation for module `\$__XILINX_TINOUTPAD'.
+Generating RTLIL representation for module `\$__XILINX_TOUTPAD'.
+Successfully finished Verilog frontend.
+
+3.48.3. Executing Verilog-2005 frontend: /home/diego/head_only/yosys/share/xilinx/abc9_unmap.v
+Parsing Verilog input from `/home/diego/head_only/yosys/share/xilinx/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `\$__ABC9_LUT6'.
+Generating RTLIL representation for module `\$__ABC9_LUT7'.
+Generating RTLIL representation for module `\$__ABC9_REG'.
+Generating RTLIL representation for module `\$__ABC9_DSP48E1_MUX'.
+Generating RTLIL representation for module `\$__ABC9_DSP48E1'.
+Successfully finished Verilog frontend.
+
+3.48.4. Continuing TECHMAP pass.
+Using template \$__ABC9_LUT6 for cells of type $__ABC9_LUT6.
+Using template $paramod\$lut\WIDTH=2\LUT=4'1000 for cells of type $lut.
+No more expansions possible.
+<suppressed ~20 debug messages>
+Removed 0 unused cells and 26 unused wires.
+
+3.49. Executing CLKBUFMAP pass (inserting global clock buffers).
+Inserting BUFG on rams_sp_rf.clk[0].
+
+3.50. Executing HIERARCHY pass (managing design hierarchy).
+
+3.50.1. Analyzing design hierarchy..
+Top module:  \rams_sp_rf
+
+3.50.2. Analyzing design hierarchy..
+Top module:  \rams_sp_rf
+Removed 0 unused modules.
+
+3.51. Printing statistics.
+
+=== rams_sp_rf ===
+
+   Number of wires:                 21
+   Number of wire bits:             37
+   Number of public wires:           6
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     BUFG                            1
+     FDRE                            6
+     LUT2                            1
+     RAM32X1D                        6
+
+   Estimated number of LCs:          1
+
+3.52. Executing CHECK pass (checking for obvious problems).
+checking module rams_sp_rf..
+found and reported 0 problems.
+
+End of script. Logfile hash: 9907c1b6db
+CPU: user 6.61s system 0.25s, MEM: 113.16 MB total, 81.27 MB resident
+Yosys 0.9+932 (git sha1 7dece79, clang 3.8.0-2ubuntu4 -fPIC -Os)
+Time spent: 49% 1x share (3 sec), 33% 23x read_verilog (2 sec), ...
