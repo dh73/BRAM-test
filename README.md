@@ -1,5 +1,5 @@
-#RAMB18E1:
-##S ingle Port:
+# RAMB18E1:
+## Single Port:
 vivado_bram_datawidth_16_addresswidth_7/vivado.log:|2     |RAMB18E1 |     1|
 vivado_bram_datawidth_18_addresswidth_8/vivado.log:|2     |RAMB18E1 |     1|
 vivado_bram_datawidth_1_addresswidth_10/vivado.log:|2     |RAMB18E1 |     1|
@@ -30,5 +30,6 @@ yosys_bram_datawidth_20_addresswidth_9/yosys_bram_datawidth_20_addresswidth_9.lo
 yosys_bram_datawidth_4_addresswidth_1/yosys_bram_datawidth_4_addresswidth_1.log:     RAMB18E1                        1
 yosys_bram_datawidth_6_addresswidth_2/yosys_bram_datawidth_6_addresswidth_2.log:     RAMB18E1                        1
 yosys_bram_datawidth_8_addresswidth_3/yosys_bram_datawidth_8_addresswidth_3.log:     RAMB18E1                        1
+
 ------------------------------------------------------------------------------------------------------------------------
 
